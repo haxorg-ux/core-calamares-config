@@ -48,45 +48,6 @@ Presentation
         }
     }
 
-    Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background3
-            source: "slides/3.png"
-            anchors.fill: parent
-        }
-    }
-    
-    Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background4
-            source: "slides/4.png"
-            anchors.fill: parent
-        }
-    }
-    
-    Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background5
-            source: "slides/5.png"
-            anchors.fill: parent
-        }
-    }
-
-    Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background6
-            source: "slides/6.png"
-            anchors.fill: parent
-        }
-    }
 
     function onActivate() {
         console.log("QML Component (default slideshow) activated");
