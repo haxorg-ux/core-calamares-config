@@ -47,9 +47,9 @@ The examples are not exhaustive.
 }
 
 QWidget {
-    background-color: #505666;
+  background-color: #292F34
 	font: 16px;
-	color: #FFFFFF;
+  color: #5294E2; 
 }
 
 QTextEdit, QListView {

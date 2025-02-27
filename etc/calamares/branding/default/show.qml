@@ -29,60 +29,65 @@ Presentation
     }
 
     Slide {
-
-    anchors.fill: parent
-    anchors.verticalCenterOffset: 0
-
-    Image {
-        id: background1
-        source: "1-welcometo.png"
-        width: parent.width; height: parent.height
-        verticalAlignment: Image.AlignTop
-        fillMode: Image.Stretch
         anchors.fill: parent
-    	}
 
-    Text {
-        anchors.horizontalCenter: background1.horizontalCenter
-        anchors.top: background1.bottom
-        text: "Welcome to"
-        wrapMode: Text.WordWrap
-        width: presentation.width
-        horizontalAlignment: Text.Center
-    	}
+        Image {
+            id: background1
+            source: "slides/1.png"
+            anchors.fill: parent
+        }
     }
 
     Slide {
-
-    anchors.fill: parent
-    anchors.verticalCenterOffset: 0
-
-    Image {
-        id: background2
-        source: "2-alci.png"
-        width: parent.width; height: parent.height
-        verticalAlignment: Image.AlignTop
-        fillMode: Image.Stretch
         anchors.fill: parent
-    	}
 
-    Text {
-        anchors.horizontalCenter: background2.horizontalCenter
-        anchors.top: background2.bottom
-        text: "ALCI"
-        wrapMode: Text.WordWrap
-        width: presentation.width
-        horizontalAlignment: Text.Center
-    	}
+        Image {
+            id: background2
+            source: "slides/2.png"
+            anchors.fill: parent
+        }
     }
 
+    Slide {
+        anchors.fill: parent
 
-    // When this slideshow is loaded as a V1 slideshow, only
-    // activatedInCalamares is set, which starts the timer (see above).
-    //
-    // In V2, also the onActivate() and onLeave() methods are called.
-    // These example functions log a message (and re-start the slides
-    // from the first).
+        Image {
+            id: background3
+            source: "slides/3.png"
+            anchors.fill: parent
+        }
+    }
+    
+    Slide {
+        anchors.fill: parent
+
+        Image {
+            id: background4
+            source: "slides/4.png"
+            anchors.fill: parent
+        }
+    }
+    
+    Slide {
+        anchors.fill: parent
+
+        Image {
+            id: background5
+            source: "slides/5.png"
+            anchors.fill: parent
+        }
+    }
+
+    Slide {
+        anchors.fill: parent
+
+        Image {
+            id: background6
+            source: "slides/6.png"
+            anchors.fill: parent
+        }
+    }
+
     function onActivate() {
         console.log("QML Component (default slideshow) activated");
         presentation.currentSlide = 0;
